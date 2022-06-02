@@ -1,0 +1,23 @@
+.wrapper{
+    background-color: rgb(216, 216, 216);                                                              
+    min-height:2440px;
+}
+.blog_content{
+    &_item{
+        background-color: rgb(255, 255, 255);
+        min-height: 545px;
+        img{
+            width: 100%;
+        }
+        &_text{
+            padding-top:25px;
+            span{
+                font-size: 16px;
+                color: #b2b2b2;
+                list-style: none;
+                display: inline-block;
+                margin-right: 15px;
+            }
+        }
+    }
+}

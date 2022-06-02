@@ -1,0 +1,111 @@
+.header_menu{
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 15px;
+    z-index: 1;
+
+}
+.nav_bar{
+    display:none;
+    position:absolute;
+    right:0;
+    line-height:80px;
+}
+.header_menu__logo{
+    box-sizing: border-box;
+    padding-top:15px;
+    
+}
+.header_menu__right{
+    display: flex;
+    justify-content:space-between;
+}
+
+.header_menu__nav{
+    display: flex;
+    align-items:center;
+    li{
+        margin-right:55px;
+        &:hover{
+            a{
+                color:#7fad39;
+            }
+        }
+        a{
+            font-size: 14px;
+            color:#252525;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+    }
+    .page_list{
+        position: relative;
+        a{
+            ul{
+                display:none;
+
+            }
+            &:hover{
+                ul{
+                    display:block;
+                    position: absolute;
+                    top :23px;
+                    width: 185px;
+                    padding-bottom: 15px;
+                    background-color: #252525;
+                    li{
+                        box-sizing: border-box;
+                        padding:10px 0 0 15px;
+                        a{
+                            text-transform: none;
+                            color:#fff;
+                            font-size: 14px;
+                            font-weight: normal;
+                            &:hover{
+                                color:#7fad39;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header_menu__cart{
+    display: flex;
+    align-items: center;
+    li{
+        margin-right: 7px;
+        span{
+            color: #252525;
+            font-weight: 700;
+        }
+    }
+}
+
+// repsponsive
+@media (max-width:1023px){
+    .header_menu{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .header_menu__right{
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
+    .header_menu__nav{
+        display: none;
+    }
+    .header_menu__cart{
+        align-items: center;
+        margin:0 auto;
+        height:58px;
+        padding:10px 0 20px 0;
+        box-sizing: border-box;
+    }
+    .nav_bar{
+        display:block;
+    }
+}

@@ -1,0 +1,19 @@
+.wrapper {
+    background-color: rgb(241, 239, 239);
+    min-height: 2440px;
+}
+.shop_sidebar {
+    &_menu {
+        min-height: 445px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #ebebeb;
+    }
+    &_price {
+    }
+    &_color {
+    }
+    &_size {
+    }
+    &_product {
+    }
+}

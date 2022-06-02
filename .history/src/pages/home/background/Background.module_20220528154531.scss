@@ -1,0 +1,19 @@
+.wrapper {
+    justify-content: flex-end;
+    padding-bottom: ;
+}
+.background{
+    position: relative;
+    min-height: 430px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    img{
+        width:100%;
+        height:100%;
+    }
+    &__text{
+        position: absolute;
+        left:0;
+        top:0;
+    }
+}

@@ -1,0 +1,123 @@
+.wrapper {
+    min-height: 2440px;
+}
+.shop_content {
+    &_product_discount {
+        min-height: 585px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+    }
+    &_filter {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 90px;
+        padding-top: 45px;
+        padding-bottom: 20px;
+    }
+    &_product {
+        min-height: 1545px;
+    }
+    &_pagination {
+        min-height: 40px;
+        padding-top: 10px;
+        border: 1px solid #252525;
+    }
+}
+.product_discount_title {
+    margin-bottom: 65px;
+    h2 {
+        position: relative;
+        color: #1c1c1c;
+        font-weight: 700;
+        font-size: 36px;
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            right: 0;
+            height: 4px;
+            width: 125px;
+            background: #7fad39;
+            content: '';
+        }
+    }
+}
+.product_discount_content {
+    &_items {
+        min-height: 370px;
+        &_item {
+            img {
+                width: 100%;
+                min-height: 273px;
+            }
+            .item_text {
+                text-align: center;
+                padding-top: 20px;
+                span {
+                    font-size: 14px;
+                    color: #b2b2b2;
+                    display: block;
+                    margin-bottom: 4px;
+                }
+                a {
+                    color: #1c1c1c;
+                    font-size: 18px;
+                }
+                &_price {
+                    font-size: 18px;
+                    color: #1c1c1c;
+                    font-weight: 700;
+                    margin-top: 14px;
+                    span {
+                        display: inline;
+                        font-size: 14px;
+                        color: #b2b2b2;
+                        margin-bottom: 4px;
+                    }
+                }
+            }
+        }
+    }
+    &_dot {
+        text-align: center;
+        margin-top: 30px;
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.shop_content_filter {
+    border-top: 1px solid rgb(235, 235, 235);
+    &_sort {
+        span {
+            font-size: 16px;
+            color: #6f6f6f;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    &_found {
+        h6{
+            
+        }
+        span {
+            color: #1c1c1c;
+            font-weight: 700;
+            margin-right: 5px;
+        }
+    }
+    &_option {
+    }
+}
+
+.shop_content_product {
+    &_item {
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.wrapper{
+    background-color: rgb(216, 216, 216);                                                              
+    min-height:2440px;
+}
+.blog_content{
+    &_item{
+        background-color: rgb(255, 255, 255);
+        min-height: 545px;
+        img{
+            width: 100%;
+            min-height: 273px;
+        }
+    }
+}

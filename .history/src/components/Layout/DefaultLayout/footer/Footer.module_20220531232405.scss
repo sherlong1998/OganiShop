@@ -1,0 +1,17 @@
+.wrapper{
+    min-height:413px;
+}
+.footer{
+    &_left{
+
+    }
+    &_center{
+        &_content{
+            display:flex;
+        }
+        
+    }
+    &_right{
+
+    }
+}

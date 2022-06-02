@@ -1,0 +1,40 @@
+.wrapper{
+    background-color: rgb(216, 216, 216);                                                              
+    min-height:2440px;
+}
+.shop_content{
+
+&_product_discount{
+    min-height: 585px;
+    padding-bottom: 50px;
+    border: 1px solid #252525;
+    box-sizing: border-box;
+}
+&_filter{
+    min-height: 90px;
+    padding:45px 0 20px 0;
+    border: 1px solid #252525
+    d
+}
+&_product{
+    min-height:1545px;
+    border: 1px solid #252525
+}
+&_pagination{
+    min-height: 40px;
+    padding-top: 10px;
+    border: 1px solid #252525
+}
+}
+.product_discount_title{
+    margin-bottom:65px ;
+}
+.product_discount_content{
+    &_items{
+        min-height: 370px;
+
+        &_item{
+            background-color: antiquewhite;
+        }
+    }
+}

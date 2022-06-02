@@ -1,4 +1,4 @@
-import HeaderOnly from '../components/Layout/HeaderOnly';
+
 
 import Home from '../pages/home/index.js';
 import Shop from '../pages/shop/index.js';

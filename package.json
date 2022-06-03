@@ -1,6 +1,6 @@
 {
-  "homepage": "https://sherlong1998.github.io/OganiShop/",
-  "name": "ogani",
+  "homepage": "https://sherlong1998.github.io/OganiShop",
+  "name": "OganiShop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -46,10 +46,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-    
   },
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "gh-pages": "^4.0.0",
-    "sass": "^1.52.1"
+    "sass": "^1.52.1",
+    "style-loader": "^3.3.1"
   }
 }

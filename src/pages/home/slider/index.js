@@ -1,8 +1,7 @@
 import styles from './Slider.module.scss';
 import classNames from 'classnames/bind';
-import { useState, useRef, Component } from 'react';
 import SliderStyle from 'react-slick';
-
+import React,{Component} from 'react';
 import imageSlider1 from '../../../assets/image/categories/cat-1.jpg';
 import imageSlider2 from '../../../assets/image/categories/cat-2.jpg';
 import imageSlider3 from '../../../assets/image/categories/cat-3.jpg';
@@ -26,7 +25,6 @@ export default class MultipleItems extends Component {
         const settings = {
             dots: true,
             infinite: true,
-            speed: 500,
             slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: true,

@@ -95,17 +95,16 @@ const menu = [
 ];
 
 function Featured() {
-    const [item, setItem] = useState('');
     const [items, setItems] = useState([]);
     const [type, setType] = useState('All');
     const contents = ['All', 'Orange', 'Fresh Meat', 'Vegetable', 'Fastfood'];
     useEffect(() => {
-        setItems(menu.filter((item) =>{
-            if(type==="All")
-            return true;
-            if (item.type===type)
-            return true;
-        }))
+        setItems(
+            menu.filter((item) => {
+                if (type === 'All') return true;
+                if (item.type === type) return true;
+            }),
+        );
     }, [type]);
     return (
         <div className={cx('wrapper', 'grid', 'wipe', 'row')}>

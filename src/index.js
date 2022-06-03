@@ -5,9 +5,11 @@ import GlobalStyles from './components/GlobalStyle/index.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-        <React.StrictMode>
+    <React.StrictMode>
+        <React.Fragment>
             <GlobalStyles>
                 <App />
             </GlobalStyles>
-        </React.StrictMode>
+        </React.Fragment>
+    </React.StrictMode>,
 );

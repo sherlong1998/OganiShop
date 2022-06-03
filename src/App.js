@@ -1,11 +1,11 @@
-import {Fragments} from 'react';
+import {Fragment} from "react"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { publicRoutes } from './route/index.js';
 import DefaultLayout from './components/Layout/DefaultLayout/index.js';
 
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function App() {
     return (
@@ -20,7 +20,7 @@ function App() {
                         if (route.layout) {
                             Layout = route.layout;
                         } else if (route.layout === null) {
-                            Layout = Fragments;
+                            Layout = Fragment;
                         }
                         return (
                             <Route

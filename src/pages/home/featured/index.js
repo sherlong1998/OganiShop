@@ -135,7 +135,7 @@ function Featured() {
                 </div>
                 <div className={cx('featured_product', 'row')}>
                     {items.map((props, index) => (
-                        <PostItem image={props.image} title={props.title} desc={props.desc} price={props.price} />
+                        <PostItem key={index} image={props.image} title={props.title} desc={props.desc} price={props.price} />
                     ))}
                 </div>
             </div>

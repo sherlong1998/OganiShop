@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OganiShop/static/css/main.29832f99.css",
-    "main.js": "/OganiShop/static/js/main.d075de50.js",
+    "main.js": "/OganiShop/static/js/main.f7ab0f82.js",
     "static/media/breadcrumb.jpg": "/OganiShop/static/media/breadcrumb.8a1bc7f445f33db27bcb.jpg",
     "static/media/background.jpg": "/OganiShop/static/media/background.d729564c645e3f7626d7.jpg",
     "static/media/banner-2.jpg": "/OganiShop/static/media/banner-2.3447f008d8c406e41912.jpg",
@@ -20,10 +20,10 @@
     "static/media/slick.woff": "/OganiShop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/OganiShop/index.html",
     "main.29832f99.css.map": "/OganiShop/static/css/main.29832f99.css.map",
-    "main.d075de50.js.map": "/OganiShop/static/js/main.d075de50.js.map"
+    "main.f7ab0f82.js.map": "/OganiShop/static/js/main.f7ab0f82.js.map"
   },
   "entrypoints": [
     "static/css/main.29832f99.css",
-    "static/js/main.d075de50.js"
+    "static/js/main.f7ab0f82.js"
   ]
 }

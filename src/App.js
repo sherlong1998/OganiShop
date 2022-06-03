@@ -1,5 +1,5 @@
 import {Fragment} from "react"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { publicRoutes } from './route/index.js';
 import DefaultLayout from './components/Layout/DefaultLayout/index.js';

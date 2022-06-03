@@ -1,5 +1,6 @@
 import styles from './HeaderMenu.module.scss';
 import logo from './logo.png';
+import {Link} from 'react-router-dom';
 import { FaHeart, FaShoppingBag, FaBars } from 'react-icons/fa';
 
 function HeaderMenu() {
@@ -11,47 +12,47 @@ function HeaderMenu() {
             <div className={`${styles.header_menu__right} l-9 m-9`}>
                 <ul className={styles.header_menu__nav}>
                     <li>
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <a href="/shop">Shop</a>
+                        <Link to="/shop">Shop</Link>
                     </li>
                     <li className={styles.page_list}>
-                        <a href="/">
+                        <Link to="/">
                             Pages
                             <ul>
                                 <li>
-                                    <a href="/">Shop Details</a>
+                                    <Link to="/">Shop Details</Link>
                                 </li>
                                 <li>
-                                    <a href="/">Shoping Cart</a>
+                                    <Link to="/">Shoping Cart</Link>
                                 </li>
                                 <li>
-                                    <a href="/">Check Out</a>
+                                    <Link to="/">Check Out</Link>
                                 </li>
                                 <li>
-                                    <a href="/">Blog Details</a>
+                                    <Link to="/">Blog Details</Link>
                                 </li>
                             </ul>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/blog">Blog</a>
+                        <Link to="/blog">Blog</Link>
                     </li>
                     <li>
-                        <a href="/contact">Contact</a>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
                 <div className={styles.header_menu__cart}>
                     <li>
-                        <a href="/">
+                        <Link to="/">
                             <FaHeart />
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/">
+                        <Link to="/">
                             <FaShoppingBag />
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         item: <span>$150.00</span>{' '}

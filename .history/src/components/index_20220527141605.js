@@ -1,3 +1,0 @@
-function GlobalStyles(){
-    return children
-}

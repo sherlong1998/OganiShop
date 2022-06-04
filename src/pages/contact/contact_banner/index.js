@@ -6,8 +6,8 @@ import classNames from 'classnames/bind';
 let cx = classNames.bind(styles);
 function ContactBanner() {
     return ( 
-        <div className = {cx('wrapper')}>
-        <div className = {cx('shop_banner')}>
+        <div className = {cx(styles.wrapper)}>
+        <div className = {cx(styles.contact_banner)}>
             <img src={bannerImage} alt="banner" />
         </div>
     </div>

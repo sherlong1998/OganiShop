@@ -1,7 +1,9 @@
 import styles from './FromBlog.module.scss';
 import classNames from 'classnames/bind';
 
-import imageBlog from '../../../assets/image/fromblog/blog-1.jpg';
+import imageBlog1 from '../../../assets/image/fromblog/blog-1.jpg';
+import imageBlog2 from '../../../assets/image/fromblog/blog-2.jpg';
+import imageBlog3 from '../../../assets/image/fromblog/blog-3.jpg';
 
 let cx = classNames.bind(styles);
 
@@ -27,21 +29,21 @@ function FromBlog() {
                 </div>
                 <div className={cx('from_blog_content','row')}>
                     <PostItem
-                        image={imageBlog}
+                        image={imageBlog1}
                         title="image blog"
                         date="May 4, 2019"
                         title_content="Cooking tips make cooking simple"
                         desc="Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat"
                     />
                     <PostItem
-                        image={imageBlog}
+                        image={imageBlog2}
                         title="image blog"
                         date="May 4, 2019"
                         title_content="Cooking tips make cooking simple"
                         desc="Sed quia non numquam modi tempora indunt ut labore et dolore magnam aliquam quaerat"
                     />
                     <PostItem
-                        image={imageBlog}
+                        image={imageBlog3}
                         title="image blog"
                         date="May 4, 2019"
                         title_content="Cooking tips make cooking simple"

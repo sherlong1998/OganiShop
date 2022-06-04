@@ -10,7 +10,7 @@ import 'slick-carousel/slick/slick-theme.css';
 function App() {
     return (
         <Router>
-            <div className="App ">
+            <div className="App overlay">
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         const Page = route.component;

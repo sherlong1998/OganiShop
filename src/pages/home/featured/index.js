@@ -1,8 +1,15 @@
 import { useState, useEffect } from 'react';
 import styles from './Featured.module.scss';
 import classNames from 'classnames/bind';
-import imageFeatured from '../../../assets/image/featured/feature-1.jpg';
-import imageFeatured1 from '../../../assets/image/featured/feature-2.jpg';
+import imageFeatured1 from '../../../assets/image/featured/feature-1.jpg';
+import imageFeatured2 from '../../../assets/image/featured/feature-2.jpg';
+import imageFeatured3 from '../../../assets/image/featured/feature-3.jpg';
+import imageFeatured4 from '../../../assets/image/featured/feature-4.jpg';
+import imageFeatured5 from '../../../assets/image/featured/feature-5.jpg';
+import imageFeatured6 from '../../../assets/image/featured/feature-6.jpg';
+import imageFeatured7 from '../../../assets/image/featured/feature-7.jpg';
+import imageFeatured8 from '../../../assets/image/featured/feature-8.jpg';
+
 let cx = classNames.bind(styles);
 
 function PostItem(props) {
@@ -22,75 +29,67 @@ function PostItem(props) {
 const menu = [
     {
         id: 1,
-        image: imageFeatured,
-        title: 'image featured',
-        desc: 'Crab Pool Security',
-        price: '$30.00',
-        type: 'Orange',
-    },
-    {
-        id: 1,
         image: imageFeatured1,
         title: 'image featured',
         desc: 'Crab Pool Security',
         price: '$30.00',
-        type: 'Fresh Meat',
+        type: ['Orange'],
     },
     {
         id: 1,
-        image: imageFeatured,
+        image: imageFeatured2,
         title: 'image featured',
         desc: 'Crab Pool Security',
         price: '$30.00',
-        type: 'Vegetable',
+        type: ['Fresh Meat', 'Orange'],
     },
     {
         id: 1,
-        image: imageFeatured,
+        image: imageFeatured3,
         title: 'image featured',
         desc: 'Crab Pool Security',
         price: '$30.00',
-        type: 'Fastfood',
+        type: ['Vegetable'],
     },
     {
         id: 1,
-        image: imageFeatured,
+        image: imageFeatured4,
         title: 'image featured',
         desc: 'Crab Pool Security',
         price: '$30.00',
-        type: 'Orange',
+        type: ['Fastfood'],
     },
     {
         id: 1,
-        image: imageFeatured,
+        image: imageFeatured5,
         title: 'image featured',
         desc: 'Crab Pool Security',
         price: '$30.00',
-        type: 'Orange',
+        type: ['Orange', 'Vegetable'],
     },
     {
         id: 1,
-        image: imageFeatured,
+        image: imageFeatured6,
         title: 'image featured',
         desc: 'Crab Pool Security',
         price: '$30.00',
-        type: 'Vegetable',
+        type: ['Orange'],
     },
     {
         id: 1,
-        image: imageFeatured,
+        image: imageFeatured7,
         title: 'image featured',
         desc: 'Crab Pool Security',
         price: '$30.00',
-        type: 'Fastfood',
+        type: ['Vegetable'],
     },
     {
         id: 1,
-        image: imageFeatured,
+        image: imageFeatured8,
         title: 'image featured',
         desc: 'Crab Pool Security',
         price: '$30.00',
-        type: 'Orange',
+        type: ['Fastfood'],
     },
 ];
 
@@ -102,7 +101,7 @@ function Featured() {
         setItems(
             menu.filter((item) => {
                 if (type === 'All') return true;
-                if (item.type === type) return true;
+                return item.type.some((element) => element === type);
             }),
         );
     }, [type]);
@@ -121,7 +120,7 @@ function Featured() {
                                     style={
                                         type === content
                                             ? {
-                                                  color: 'red',
+                                                  color: '#7fad39',
                                               }
                                             : {}
                                     }
@@ -135,7 +134,13 @@ function Featured() {
                 </div>
                 <div className={cx('featured_product', 'row')}>
                     {items.map((props, index) => (
-                        <PostItem key={index} image={props.image} title={props.title} desc={props.desc} price={props.price} />
+                        <PostItem
+                            key={index}
+                            image={props.image}
+                            title={props.title}
+                            desc={props.desc}
+                            price={props.price}
+                        />
                     ))}
                 </div>
             </div>

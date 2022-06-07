@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/OganiShop/static/css/main.b728f0e8.css",
-    "main.js": "/OganiShop/static/js/main.cee4c064.js",
+    "main.css": "/OganiShop/static/css/main.e2c309c2.css",
+    "main.js": "/OganiShop/static/js/main.7b38c323.js",
     "static/media/map.png": "/OganiShop/static/media/map.71b606980decd0cf97af.png",
+    "static/media/details-pic.jpg": "/OganiShop/static/media/details-pic.db480b8ce40fde903abe.jpg",
     "static/media/breadcrumb.jpg": "/OganiShop/static/media/breadcrumb.8a1bc7f445f33db27bcb.jpg",
     "static/media/background.jpg": "/OganiShop/static/media/background.d729564c645e3f7626d7.jpg",
+    "static/media/product-details-1.jpg": "/OganiShop/static/media/product-details-1.cd82bc3212e4572fefd2.jpg",
     "static/media/blog-5.jpg": "/OganiShop/static/media/blog-5.7685c527426726998109.jpg",
     "static/media/blog-4.jpg": "/OganiShop/static/media/blog-4.e5a7bd2e8aaee884858d.jpg",
     "static/media/blog-6.jpg": "/OganiShop/static/media/blog-6.0e2e3f2223f9809891d2.jpg",
@@ -49,11 +51,11 @@
     "static/media/slick.ttf": "/OganiShop/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/OganiShop/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/OganiShop/index.html",
-    "main.b728f0e8.css.map": "/OganiShop/static/css/main.b728f0e8.css.map",
-    "main.cee4c064.js.map": "/OganiShop/static/js/main.cee4c064.js.map"
+    "main.e2c309c2.css.map": "/OganiShop/static/css/main.e2c309c2.css.map",
+    "main.7b38c323.js.map": "/OganiShop/static/js/main.7b38c323.js.map"
   },
   "entrypoints": [
-    "static/css/main.b728f0e8.css",
-    "static/js/main.cee4c064.js"
+    "static/css/main.e2c309c2.css",
+    "static/js/main.7b38c323.js"
   ]
 }

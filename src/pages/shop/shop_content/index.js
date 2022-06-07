@@ -3,7 +3,6 @@ import classNames from 'classnames/bind';
 
 import Slider from 'react-slick';
 
-
 import imageProduct1 from '../../../assets/image/product/product-1.jpg';
 import imageProduct2 from '../../../assets/image/product/product-2.jpg';
 import imageProduct3 from '../../../assets/image/product/product-3.jpg';
@@ -17,18 +16,18 @@ import imageProduct10 from '../../../assets/image/product/product-10.jpg';
 import imageProduct11 from '../../../assets/image/product/product-11.jpg';
 import imageProduct12 from '../../../assets/image/product/product-12.jpg';
 
-import imageDiscount1 from '../../../assets/image/product/discount/pd-1.jpg'
-import imageDiscount2 from '../../../assets/image/product/discount/pd-2.jpg'
-import imageDiscount3 from '../../../assets/image/product/discount/pd-3.jpg'
-import imageDiscount4 from '../../../assets/image/product/discount/pd-4.jpg'
-import imageDiscount5 from '../../../assets/image/product/discount/pd-5.jpg'
-import imageDiscount6 from '../../../assets/image/product/discount/pd-6.jpg'
+import imageDiscount1 from '../../../assets/image/product/discount/pd-1.jpg';
+import imageDiscount2 from '../../../assets/image/product/discount/pd-2.jpg';
+import imageDiscount3 from '../../../assets/image/product/discount/pd-3.jpg';
+import imageDiscount4 from '../../../assets/image/product/discount/pd-4.jpg';
+import imageDiscount5 from '../../../assets/image/product/discount/pd-5.jpg';
+import imageDiscount6 from '../../../assets/image/product/discount/pd-6.jpg';
 
 let cx = classNames.bind(styles);
 
 function PostItem(props) {
     return (
-        <div className={cx('product_discount_content_items_item','col')}>
+        <div className={cx('product_discount_content_items_item', 'col')}>
             <img src={props.image} alt={props.title} />
             <div className={cx('item_text')}>
                 <span>{props.kindItem}</span>
@@ -39,8 +38,9 @@ function PostItem(props) {
                 </div>
             </div>
         </div>
-    );
+    ); 
 }
+
 function PostProductItem(props) {
     return (
         <div className={cx('shop_content_product_item', 'l-4', 'm-6', 'c-12', 'col')}>
@@ -65,15 +65,14 @@ function ShopContent() {
                     <div className={cx('product_discount_content')}>
                         <div className={cx('product_discount_content_items')}>
                             <Slider
-                            dots = {true}
-                            infinite = {true}
-                            slidesToShow= {3}
-                            slidesToScroll={ 1}
-                            autoplay={ true}
-                            speed={2000}
-                            autoplaySpeed={ 3000}
-                             cssEase={ 'ease'}
-                             >
+                                infinite={true}
+                                slidesToShow={3}
+                                slidesToScroll={1}
+                                autoplay={true}
+                                speed={3000}
+                                autoplaySpeed={1000}
+                                cssEase={'ease'}
+                            >
                                 <PostItem
                                     image={imageDiscount1}
                                     title="image featured"
@@ -114,7 +113,7 @@ function ShopContent() {
                                     discountPrice="$30.00"
                                     price="$36.00"
                                 />
-                                
+
                                 <PostItem
                                     image={imageDiscount6}
                                     title="image featured"

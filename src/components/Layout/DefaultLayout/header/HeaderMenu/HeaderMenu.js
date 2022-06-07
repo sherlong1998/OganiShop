@@ -22,16 +22,16 @@ function HeaderMenu() {
                             Pages
                             <ul>
                                 <li>
-                                    <Link to="/">Shop Details</Link>
+                                    <Link to="/details">Shop Details</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Shoping Cart</Link>
+                                    <Link to="/cart">Shoping Cart</Link>
                                 </li>
                                 <li>
                                     <Link to="/">Check Out</Link>
                                 </li>
                                 <li>
-                                    <Link to="/">Blog Details</Link>
+                                    <Link to="/blog_details">Blog Details</Link>
                                 </li>
                             </ul>
                         </Link>

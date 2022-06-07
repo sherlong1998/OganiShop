@@ -6,7 +6,7 @@ let cx = classNames.bind(styles);
 
 function BlogSidebar() {
     return (
-        <div className={cx('wrapper', 'col', 'l-4')}>
+        <div className={cx(styles.wrapper, 'col', 'l-4')}>
             <div className={cx('blog_sidebar')}>
                 <div className={cx('blog_sidebar_input')}>
                     <input type="text" placeholder="Search..." />
